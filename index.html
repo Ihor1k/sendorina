@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="./src/images/favicon.svg"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sendorina</title>
+  <link rel="stylesheet" href="./src/scss/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="menu-overlay"></div>
+    <div class="container">
+      <div class="header-inner">
+        <div class="header-logo">
+          <a href="/"
+            ><img
+              src="./src/images/logo.svg"
+              width="127"
+              height="27"
+              alt="Logo"
+          /></a>
+        </div>
+        <div class="header-logo-mobile">
+          <a href="/"
+            ><img
+              src="./src/images/logo.svg"
+              width="127"
+              height="27"
+              alt="Logo"
+          /></a>
+        </div>
+
+        <div class="burger">
+          <img src="./src/images/burger.svg" alt="">
+        </div>
+
+        <div class="header-menu">
+          <div class="burger-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M6.4 19L5 17.6L10.6 12L5 6.4L6.4 5L12 10.6L17.6 5L19 6.4L13.4 12L19 17.6L17.6 19L12 13.4L6.4 19Z" fill="#5C5A5B"/>
+            </svg>
+          </div>
+          <a href="#about" class="header-link">About Us </a>
+          <a href="#why" class="header-link">Why Us</a>
+          <a href="#process" class="header-link">Process</a>
+
+        </div>
+
+        <div class="header-buttons mobile-visible">
+          <button class="header-button">Get in Touch
+            <div class="header-button-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M21 12H3" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 6L21 12L15 18" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="popup-overlay" id="popup">
+    <div class="popup">
+      <div class="popup-inner">
+        <div class="popup-context">
+          <h3><span class="grey">Let’s</span> Talk</h3>
+          <p> Have a question? We’ll get back to you shortly</p>
+        </div>
+
+        <form class="popup-form" id="joinForm">
+          <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required
+          />
+
+          <input
+            type="email"
+            id="email"
+            placeholder="Your E-Mail"
+            required
+          />
+          <textarea name="message" placeholder="Message" required></textarea>
+          <div class="popup-wrapper">
+            <button type="popup" class="popup-btn">
+              Send
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M21 12H3" stroke="#49009E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 6L21 12L15 18" stroke="#49009E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </form>
+        <div class="popup-info">
+          <p> Prefer to email? Reach us at contact</p>
+          <p class="email">@sendorina.com</p>
+        </div>
+      </div>
+
+      <span class="close-popup">&times;</span>
+    </div>
+  </div>
+
+  <section id="top" class="hero">
+    <img class="hero-bg" src="./src/images/hero-bg.png" alt="" />
+    <img class="hero-bg-mobile" src="./src/images/hero-bg-mobile.png" alt="">
+    <!-- <div class="hero-overlay-bottom"></div> -->
+    <div class="container">
+      <div class="hero-inner">
+        <h1 class="hero-title">Simplify Payments. <br>Secure Growth.</h1>
+        <p class="hero-text">Sendorina connects businesses with tailored digital payment solutions — from crypto wallets to merchant accounts — delivering secure, efficient, and scalable financial operations.</p>
+        <button class="hero-btn">Talk to Us
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+            <path d="M21.5 12.5H3.5" stroke="#49009E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15.5 6.5L21.5 12.5L15.5 18.5" stroke="#49009E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="pay">
+    <div class="container">
+      <div class="pay-inner">
+        <h2 class="pay-title"><span class="grey">Your gateway to</span> simplified <br> digital payments</h2>
+        <p class="pay-suptitle">Navigating today’s payment landscape doesn’t have <br> to be complex</p>
+        <p class="pay-text">Sendorina helps you discover and integrate the right tools to accept funds via cryptocurrencies, bank cards, e-wallets, and more — all under a single, transparent platform. Sendorina is an innovative fintech company and product that acts as a facilitator in connecting businesses with reliable digital payment solutions. We help companies find the proper solution for the acceptance of funds through cryptocurrencies, bank cards, e-wallets, and merchant accounts — securely, efficiently, and without unnecessary complexity</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee">
+    <div class="marquee-inner">
+      <span>Crypto. Cards. E-wallets. <strong>One platform /</strong></span>
+      <span>Crypto. Cards. E-wallets. <strong>One platform /</strong></span>
+      <span>Crypto. Cards. E-wallets. <strong>One platform /</strong></span>
+      <span>Crypto. Cards. E-wallets. <strong>One platform /</strong></span>
+    </div>
+  </div>
+
+  <section class="mission">
+    <div class="container">
+      <div class="mission-inner">
+        <h2 class="mission-title"><span class="grey">Our</span> Mission</h2>
+        <p class="mission-suptitle">Our mission is to empower businesses — from startups to large <br> enterprises</p>
+        <p class="mission-text">With access to comprehensive payment tools that meet the highest security standards while offering the flexibility to grow. Sendorina aims to be your adaptable technology partner, helping you navigate and integrate the right payment infrastructure to suit your needs</p>
+      </div>
+    </div>
+  </section>  
+
+  <section id="why" class="why">
+    <img class="why-bg" src="./src/images/why-bg.png" alt="">
+    <img class="why-bg-mobile" src="./src/images/why-bg-mobile.png" alt="">
+    <div class="container">
+        <div class="why-content">
+          <h3 class="why-title"> <span class="grey">Why Businesses</span> Choose Us</h3>
+          <p class="why-text">We offer scalable, secure, and simple payment solutions — built for <br> growth and long-term partnership</p>
+        </div>
+
+        <div class="why-list">
+          <div class="why-item">
+            <img class="why-mobile" src="./src/images/why-icon1.svg" width="64" height="64" alt="">
+            <div class="why-item-block">
+              <p class="why-item-num">01/</p>
+              <p class="why-item-title">Scalability</p>
+            </div>
+            <div class="why-item-icon">
+              <img src="./src/images/why-icon1.svg" width="143" height="134" alt="">
+            </div>
+            <p class="why-item-text">As you grow, your payment ecosystem scales with you</p>
+          </div>
+
+          <div class="why-item">
+            <img class="why-mobile" src="./src/images/why-icon2.svg" width="64" height="64" alt="">
+            <div class="why-item-block">
+              <p class="why-item-num">02/</p>
+              <p class="why-item-title">Simplicity</p>
+            </div>
+            <div class="why-item-icon">
+              <img src="./src/images/why-icon2.svg" width="143" height="134" alt="">
+            </div>
+            <p class="why-item-text">Easy onboarding and integration with third-party services</p>
+          </div>
+
+          <div class="why-item">
+            <img class="why-mobile" src="./src/images/why-icon3.svg" width="64" height="64" alt="">
+            <div class="why-item-block">
+              <p class="why-item-num">03/</p>
+              <p class="why-item-title">Security</p>
+            </div>
+            <div class="why-item-icon">
+              <img src="./src/images/why-icon3.svg" width="143" height="134" alt="">
+            </div>
+            <p class="why-item-text">All solutions adhere to strict standards and certifications</p>
+          </div>
+
+          <div class="why-item">
+            <img class="why-mobile" src="./src/images/why-icon4.svg" width="64" height="64" alt="">
+            <div class="why-item-block">
+              <p class="why-item-num">04/</p>
+              <p class="why-item-title">Partnership</p>
+            </div>
+            <div class="why-item-icon">
+              <img src="./src/images/why-icon4.svg" width="143" height="134" alt="">
+            </div>
+            <p class="why-item-text">More than just a service — a long-term collaboration</p>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="process" class="work">
+    <div class="container">
+      <div class="work-inner">
+        <h2 class="work-title"><span class="grey">How</span> We Work</h2>
+        <p class="work-suptitle">We guide you from selecting the right providers to integrating <br> them into one seamless, transparent platform</p>
+        <p class="work-text">Sendorina simplifies digital payments by helping businesses discover, connect, and manage diverse financial tools through a single, transparent interface. Whether you need card processing, e-wallets, crypto payments, or merchant accounts — we help you find the right providers and bring everything together under one unified platform for seamless control and oversight</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <div class="container">
+      <div class="contacts-inner">
+        <!-- <img class="contacts-bg" src="./src/images/Gradient.png" alt=""> -->
+        <h3 class="contacts-title">Ready to Streamline Your Payments?</h3>
+        <p class="contacts-text">Let’s find the right payment setup for your business. Whether you're launching a product, expanding internationally, or just simplifying your operations — our team is here to help you make smarter, more secure financial moves</p>
+        <button class="button">Talk to Us
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+            <path d="M21.5 12H3.5" stroke="#49009E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15.5 6L21.5 12L15.5 18" stroke="#49009E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <div class="footer-img">
+            <img src="./src/images/logo.svg" width="127" height="27" alt="" class="footer-logo">
+          </div>
+          <div class="footer-info">
+            <p>60 Dodekanisou, 4043 Germasogeia, <br> 
+              Limassol, Cyprus</p>
+            <p>+35795588867</p>
+          </div>
+          <div class="footer-copyright">© 2025 Sendorina Management Ltd All rights reserved.</div>
+        </div>
+        
+        <div class="footer-right">
+          <div class="footer-block">
+            <div class="footer-menu">
+              <a href="#about">About Us</a>
+              <a href="#why">Why Us</a>
+              <a href="#work">Process</a>
+            </div>
+            <a href="#top" class="footer-top">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.25 20.25L11.25 4.34976L12.75 4.34976L12.75 20.25L11.25 20.25Z" fill="#F2F2F2"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0221 11.6104L11.9993 5.5626L5.97759 11.6104L4.91465 10.552L11.9993 3.43679L19.085 10.5519L18.0221 11.6104Z" fill="#F2F2F2"/>
+              </svg>
+            </a>
+          </div>
+          <div class="footer-mail">
+            <p class="footer-sup">Support</p>
+            <p class="footer-email">dev@sendoria.com</p>
+          </div>
+          <div class="footer-policy">
+            <a href="./src/politic.html">Privacy Policy</a>
+            <a href="./src/terms.html">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-mobile">
+        <div class="footer-mobile-img">
+          <img src="./src/images/logo.svg" width="127" height="27" alt="">
+        </div>
+        <div class="footer-menu-mobile">
+          <a href="#about">About Us</a>
+          <a href="#why">Why Us</a>
+          <a href="#work">Process</a>
+        </div>
+        <div class="footer-mail-mobile">
+          <p class="footer-sup">Support</p>
+          <p class="footer-email">dev@sendoria.com</p>
+        </div>
+        <div class="footer-info-mobile">
+          <p>60 Dodekanisou, 4043 Germasogeia, <br> 
+            Limassol, Cyprus</p>
+          <p>+35795588867</p>
+        </div>
+        <div class="footer-policy-mobile">
+          <a href="./src/politic.html">Privacy Policy</a>
+          <a href="./src/terms.html">Terms of Use</a>
+        </div>
+        <div class="footer-copyright-mobile">© 2025 Sendorina Management Ltd All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+.privacy {
+    margin-top: 140px;
+}
+
+.privacy .container {
+    max-width: 917px;
+}
+
+.privacy h1 {
+    color: var(--neutral-white, #F2F2F2);
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: clamp(40px, 4vw, 56px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 61.6px */
+}
+
+.privacy-item {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.privacy-item h2 {
+    color: var(--neutral-white, #F2F2F2);
+    font-family: 'Manrope';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 33.6px */
+    border-bottom: 1px solid #262626;
+    padding-bottom: 24px;
+}
+
+.privacy-item p {
+    color: var(--neutral-grey-dark, #A1A1A1);
+    font-family: 'Manrope';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 30.8px */
+}
+
+.privacy-item span {
+    color: var(--neutral-white, #F2F2F2);
+    font-family: 'Manrope';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.terms {
+    margin-top: 140px;
+}
+
+.terms .container {
+    max-width: 917px;
+}
+
+.terms-title {
+    color: var(--neutral-white, #F2F2F2);
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: clamp(40px, 4vw, 56px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 61.6px */
+    margin-bottom: 48px;
+}
+
+.terms span {
+    color: var(--neutral-white, #F2F2F2);
+    font-family: 'Manrope';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.terms p {
+    color: var(--neutral-grey-dark, #A1A1A1);
+    font-family: 'Manrope';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 30.8px */
+}
+
+.terms a {
+    color: var(--neutral-white, #F2F2F2);
+    font-family: 'Manrope';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}

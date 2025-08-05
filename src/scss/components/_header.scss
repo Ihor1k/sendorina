@@ -1,0 +1,245 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    padding: 16px 0px;
+    border-bottom: 1px solid #262626;
+    background: rgba(0, 0, 0, 0.40);
+    backdrop-filter: blur(7.5px);
+    @media screen and (max-width: 480px) {
+        padding: 24px 0 16px 0;
+    }
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4); // напівпрозоре чорне
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 998; // трохи менше ніж бургер-меню
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; /* Додано */
+}
+
+.header-logo-mobile {
+  display: none;
+  @media screen and (max-width: 480px) {
+        display: block;
+  }
+}
+
+.header-logo {
+  @media screen and (max-width: 480px) {
+    display: none;     
+  }
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: clamp(8px, 2vw, 26px);
+}
+
+.header-link {
+    position: relative;
+    color: var(--neutral-grey-dark, #A1A1A1);
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    text-decoration: none;
+    transition: all 400ms ease-in-out;
+}
+
+.header-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background: #00DE9D; /* колір світіння */
+    filter: blur(12px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+
+.header-link:hover {
+    color: #F2F2F2; /* білий текст */
+    // text-shadow: 0 0 15px rgba(0, 255, 180, 0.8); /* світіння з блюром */
+}
+
+.header-link:hover::after {
+    opacity: .7; /* показуємо glow */
+}
+
+.header-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 16px 24px;
+    color: var(--neutral-white, #F2F2F2);
+
+    /* buttons */
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 125% */
+    background: none;
+    cursor: pointer;
+
+    border-radius: 100px;
+    border: 1px solid var(--neutral-grey-border, #262626);
+    transition: ease-in-out 400ms all;
+    @media screen and (max-width: 480px) {
+      display: none;   
+    }
+}
+
+.header-button-icon {
+    display: flex;
+    position: relative;
+}
+
+.header-button-icon::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background: #00DE9D; /* колір світіння */
+    filter: blur(12px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.header-button:hover .header-button-icon::after {
+    opacity: .7;
+}
+
+.header-button:hover {
+    // background: var(--primary-200, #4C4648);
+    border: 1px solid transparent;
+}
+
+.header-button:active {
+    border: 1px solid #00DE9D;
+    background: var(--primary-brand-mint, #00DE9D);
+    color: #000;
+}
+
+.header-button-icon svg path {
+    transition: stroke 400ms ease; /* плавна зміна кольору */
+}
+
+.header-button:active .header-button-icon svg path {
+    stroke: #000;
+}
+
+
+
+// !BURGER
+
+body.menu-open {
+    overflow: hidden;
+  }
+
+.burger {
+    display: none;
+  }
+  
+  .burger-close {
+    display: none;
+  }
+
+  @media screen and (max-width: 480px) {
+    .header-inner {
+      position: relative;
+      justify-content: space-between;
+      
+    }
+  
+    .burger {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      width: 40px;
+      height: 40px;
+      padding: 8px;
+      cursor: pointer;
+      
+    }
+  
+    .burger-close {
+      display: flex;
+      position: absolute;
+      top: 26px;
+      right: 24px;
+      background: none;
+      width: 38px;
+      height: 38px;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      z-index: 1002;
+    }
+  
+    .header-menu {
+      border-radius: 20px;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: unset;
+      position: fixed;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background: #000;
+      z-index: 1000;
+      padding-top: 100px;
+      transition: all 0.3s ease;
+    }
+  
+    .open {
+      display: flex !important;
+    }
+  
+    .header-link {
+      margin: 0 0 45px 0;
+      text-decoration: none;
+    }
+  
+    .header-buttons {
+      display: none;
+    }
+  }
+  

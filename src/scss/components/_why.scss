@@ -1,0 +1,202 @@
+.why {
+    position: relative;
+    margin-top: clamp(120px, 8vw, 170px);
+    padding-top: 90px;
+}
+
+.why-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
+}
+
+.why-bg-mobile {
+    display: none;
+    @media screen and (max-width: 480px) {
+        display: block; 
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+}
+
+.why-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+
+.why-title {
+    color: var(--neutral-grey-title, #f2f2f2);
+    text-align: center;
+
+    /* h2 */
+    font-family: "DM Sans";
+    font-size: clamp(40px, 4vw, 56px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 61.6px */
+}
+
+.why-text {
+    color: var(--neutral-white, #F2F2F2);
+    text-align: center;
+
+    /* h3 */
+    font-family: 'Manrope';
+    font-size: clamp(24px, 2vw, 28px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 39.2px */
+}
+
+.why-list {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    @media screen and (max-width: 480px) {
+        flex-direction: column; 
+        gap: 24px;  
+    }
+}
+
+.why-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 24px 70px 24px;
+    border-radius: 16px;
+    border: 1px solid var(--neutral-grey-border, #262626);
+    background: var(--neutral-card, #0D0D0D);
+    transition: all 400ms ease-in-out;
+    overflow: hidden;
+    width: 23%;
+    @media screen and (max-width: 480px) {
+        width: 100%; 
+        align-items: flex-start;
+    }
+}
+
+.why-item:hover {
+    background: #00DE9D;
+    border: 1px solid #00DE9D;
+}
+
+.why-mobile {
+    display: none;
+    @media screen and (max-width: 480px) {
+        display: block;   
+        margin-bottom: 24px;
+    }
+}
+
+.why-item-block {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 32px;
+    @media screen and (max-width: 480px) {
+        margin-bottom: 120px;   
+    }
+}
+
+.why-item-num {
+    position: absolute;
+    left: 0;
+    top: 16px;
+    padding-left: 22px;
+    color: var(--neutral-grey-title, #656565);
+    text-align: center;
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+    background: var(--neutral-card, #0D0D0D);
+    transition: all 400ms ease-in-out;
+    z-index: 5;
+    @media screen and (max-width: 480px) {
+        position: static;  
+        padding: unset; 
+    }
+}
+
+.why-item:hover .why-item-num {
+    color: #000;
+    background: #00DE9D;
+}
+
+.why-item-title {
+    color: var(--neutral-surface, #000);
+    text-align: center;
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 28px */
+    // opacity: 1;
+    transform: translateX(-100px);
+    transition: all 900ms ease-in-out;
+    z-index: 2;
+    @media screen and (max-width: 480px) {
+        transform: unset;
+        color: #fff;   
+    }
+}
+
+.why-item:hover .why-item-title {
+    // opacity: 1;
+    transform: translateX(35px);
+}
+
+.why-item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 900ms ease-in-out;
+    @media screen and (max-width: 480px) {
+        display: none;   
+    }
+}
+
+.why-item:hover .why-item-icon {
+    transform: scale(0)
+}
+
+.why-item-text {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    color: var(--neutral-surface, #000);
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 28px */
+    max-width: 262px;
+    width: 100%;
+    transform: translateY(120px);
+    transition: transform 900ms ease-in-out;
+    @media screen and (max-width: 480px) {
+        transform: unset;  
+        color: #fff; 
+    }
+}
+
+.why-item:hover .why-item-text {
+    transform: translateY(0);
+}

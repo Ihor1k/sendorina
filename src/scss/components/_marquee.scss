@@ -1,0 +1,35 @@
+.marquee {
+    margin-top: clamp(120px, 10vw, 260px);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .marquee-inner {
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+  }
+  
+  .marquee-inner span {
+    display: inline-block;
+    padding-right: 50px; /* відступ між повтореннями */
+
+    // text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #414141;
+    font-family: "DM Sans";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 79.2px */
+    letter-spacing: 0.144px;
+  }
+
+  .marquee-inner strong {
+    -webkit-text-stroke-color: var(--primary-brand-mint, #00DE9D);
+  }
+  
+  @keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
